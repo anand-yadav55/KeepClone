@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(102, 102, 102);
+}
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+.navbar,
+.navbar > div {
+  background-color: grey;
+  text-align: center;
+  display: inline;
+  font-size: xx-large;
+}
+.body {
+  width: 100vw;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
+  height: 10vh;
+  max-height: 300px;
+  letter-spacing: 2px;
+}
+button {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.control-btn {
+  height: 10vh;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+.control-btn > form {
+  box-shadow: 0 0 5px grey;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.control-btn > form > input {
+  width: 100%;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.control-btn > form > input,
+.control-btn > form > textarea {
+  border: 0;
+  padding: 10px;
+  outline: 0;
+}
+.control-btn > form > textarea {
+  resize: none;
+  /* display: none; */
+}
+.control-btn > form > button {
+  padding: 10px;
+  /* display: none; */
+  border-radius: 0;
+}
+.control-btn > form {
+  display: flex;
+  width: 55vw;
+  align-items: center;
+}
+.taskgroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 50%;
+}
+.task {
+  margin: 20px;
+  height: auto;
+  width: 400px;
+  padding: 20px;
+  border: 1px ridge;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+.tasktitle {
+  font-weight: 900;
+  font-size: larger;
+  display: block;
+}
+.taskbody {
+  font-size: 14px;
+  display: block;
+}
