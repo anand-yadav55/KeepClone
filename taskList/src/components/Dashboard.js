@@ -1,11 +1,13 @@
-import React from "react";
-import {} from "react-router";
+import React from 'react';
+import { Container, Paper } from '@material-ui/core';
+import Body from './Body';
+import Header from './Header';
 
-import Body from "./Body";
 export default function Dashboard() {
   return (
-    <div className="dashboard">
+    <Container>
       <Body />
-    </div>
+      <Header username="anand" />
+    </Container>
   );
 }
